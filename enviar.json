@@ -1,0 +1,6 @@
+[
+    {"tipo": "texto", 
+    "destinatario": "user@example.com", 
+    "conteudo": "Olá, como você está?"
+}
+]
