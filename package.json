@@ -1,17 +1,21 @@
 {
-  "name": "minha-api-envio",
+  "name": "sistema-envio-email",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Sistema completo de envio de e-mail com Node.js, Express, Nodemailer e Front-end integrado",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

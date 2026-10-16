@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Envio de E-mail</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📧 Central de Disparo</h1>
+            <p>Envie e-mails formatados com suporte a HTML e anexos de forma segura.</p>
+        </header>
+
+        <main class="card">
+            <form id="emailForm">
+                <div class="form-group">
+                    <label for="to">E-mail do Destinatário</label>
+                    <input type="email" id="to" name="to" required placeholder="exemplo@dominio.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Assunto da mensagem">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem (Suporta HTML)</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui... Use tags HTML se desejar (ex: &lt;b&gt;Negrito&lt;/b&gt;)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="anexo">Arquivo Anexo (Opcional - Máx. 5MB)</label>
+                    <input type="file" id="anexo" name="anexo">
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn-primary">
+                    <span class="btn-text">Enviar E-mail</span>
+                    <span class="spinner" style="display: none;"></span>
+                </button>
+            </form>
+
+            <div id="responseMessage" class="alert" style="display: none;"></div>
+        </main>
+    </div>
+
+    <script src="public/js/main.js"></script>
+</body>
+</html>
